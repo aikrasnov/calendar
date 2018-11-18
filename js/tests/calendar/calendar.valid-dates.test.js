@@ -54,21 +54,31 @@ describe('valid dates', () => {
 
     describe('years', () => {
         describe('B.C.', () => {
-            for (let i = MIN_YEAR; i <= -1; i++) {
-                it(`should set any year in range ${MIN_YEAR} ... -1`, async () => {
+            for (let i = MIN_YEAR; i <= -1; i = i + 1000) {
+                it(`should set any year in range ${MIN_YEAR} ... -1 (now ${i})`, async () => {
                     calendar.setYear(i);
                     expect(calendar.getYear()).toStrictEqual(i);
                 });
             }
+
+            it('should set -1 year', async () => {
+                calendar.setYear(-1);
+                expect(calendar.getYear()).toStrictEqual(-1);
+            });
         });
 
         describe('A.C.', () => {
-            for (let i = 1; i <= MAX_YEAR; i++) {
-                it(`should set any year in range 1 ... ${MAX_YEAR}`, async () => {
+            for (let i = 1; i <= MAX_YEAR; i = i + 1000) {
+                it(`should set any year in range 1 ... ${MAX_YEAR} (now ${i})`, async () => {
                     calendar.setYear(i);
                     expect(calendar.getYear()).toStrictEqual(i);
                 });
             }
+
+            it('should set 9999 year', async () => {
+                calendar.setYear(9999);
+                expect(calendar.getYear()).toStrictEqual(9999);
+            });
         });
     });
 
