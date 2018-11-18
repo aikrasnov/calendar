@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=8"
   },
-  "main": "calendar.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest  --notify --config=jest.config.js",
     "lint": "eslint --report-unused-disable-directives ./ --format codeframe && echo 'Eslint done'!",
@@ -13,11 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/aikrasnov/calendar"
   },
   "keywords": [
     "calendar",
-    "test",
     "tests",
     "gregorian"
   ],

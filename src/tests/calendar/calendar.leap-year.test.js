@@ -1,4 +1,4 @@
-const {Calendar} = require('../../../calendar');
+const {Calendar} = require('../../calendar');
 const {MAX_DAY_FEBRUARY, MAX_DAY_FEBRUARY_LEAP_YEAR, FEBRUARY} = require('./lib/dates');
 
 describe('leap years', () => {

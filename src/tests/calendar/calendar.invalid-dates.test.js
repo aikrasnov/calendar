@@ -1,4 +1,4 @@
-const {Calendar} = require('../../../calendar');
+const {Calendar} = require('../../calendar');
 const {FEBRUARY, MAX_DAY_FEBRUARY, MAX_DAY_FEBRUARY_LEAP_YEAR, MIN_DAY} = require('./lib/dates');
 
 describe('invalid dates', () => {

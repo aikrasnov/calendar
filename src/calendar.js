@@ -1,4 +1,4 @@
-const {Util} = require('./src/lib/util');
+const {Util} = require('./lib/util');
 
 class Calendar {
     constructor() {

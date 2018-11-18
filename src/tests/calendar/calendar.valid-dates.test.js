@@ -1,4 +1,4 @@
-const {Calendar} = require('../../../calendar');
+const {Calendar} = require('../../calendar');
 const {MAX_DAY_JANUARY, JANUARY, MAX_DAY_NOVEMBER, NOVEMBER, MAX_MONTH, MAX_YEAR, MIN_YEAR} = require('./lib/dates');
 
 describe('valid dates', () => {
