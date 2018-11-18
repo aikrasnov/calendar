@@ -52,7 +52,11 @@ class Calendar {
      * @return {boolean}
      */
     _isLeapYear() {
-        return this._year % 400 === 0 || (this._year % 4 === 0 && this._year % 100 !== 0);
+        // use a different formula because https://ru.wikipedia.org/wiki/Пролептический_григорианский_календарь?section=1
+        // if _year < 1 then use formula for B.C.
+        return this._year < 1
+            ? (this._year + 1) % 400 === 0 || ((this._year + 1) % 4 === 0 && (this._year + 1) % 100 !== 0)
+            : this._year % 400 === 0 || (this._year % 4 === 0 && this._year % 100 !== 0);
     }
 
     getMaxDay() {
