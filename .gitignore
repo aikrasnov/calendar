@@ -12,3 +12,5 @@ node_modules/
 
 # Локальные файлы конфигураций
 .env
+
+/js/coverage
