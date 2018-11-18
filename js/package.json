@@ -1,0 +1,24 @@
+{
+  "name": "gregorian_calendar",
+  "version": "1.0.0",
+  "description": "tests for gregorian calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "calendar",
+    "test",
+    "tests",
+    "gregorian"
+  ],
+  "author": "Aleksander Krasnov",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
