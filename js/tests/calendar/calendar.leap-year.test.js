@@ -49,7 +49,7 @@ describe('leap years', () => {
                 expect(calendar.getMaxDay()).toStrictEqual(MAX_DAY_FEBRUARY_LEAP_YEAR);
             });
 
-            it('should set not lear year', () => {
+            it('should set not leap year', () => {
                 calendar.setYear(date.year + 1);
                 expect(calendar.getYear()).toStrictEqual(date.year + 1);
             });
