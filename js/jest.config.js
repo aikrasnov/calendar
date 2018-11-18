@@ -2,8 +2,8 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
-  coverageDirectory: 'coverage',
-  testEnvironment: 'node',
-  collectCoverage: true,
-  verbose: true
+    coverageDirectory: 'coverage',
+    testEnvironment: 'node',
+    collectCoverage: true,
+    verbose: true
 };

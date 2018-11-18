@@ -8,7 +8,7 @@
   "main": "calendar.js",
   "scripts": {
     "test": "jest  --notify --config=jest.config.js",
-    "lint": "eslint --report-unused-disable-directives ./ --cache --format codeframe"
+    "lint": "eslint --report-unused-disable-directives ./ --format codeframe && echo 'Eslint done'!"
   },
   "repository": {
     "type": "git",

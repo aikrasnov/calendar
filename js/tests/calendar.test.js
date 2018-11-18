@@ -5,7 +5,7 @@ const calendar = new Calendar();
 
 describe('main', () => {
 
-  it('should have year, month, day', async () => {
-    assert(typeof calendar.getYear() === 'number');
-  });
+    it('should have year, month, day', async () => {
+        assert(typeof calendar.getYear() === 'number');
+    });
 });
