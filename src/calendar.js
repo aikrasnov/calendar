@@ -36,7 +36,7 @@ class Calendar {
             this._maxDay = 31;
         // if month is february, year maybe be leap year
         } else if (this._month === 2) {
-            this._maxDay = (this._year % 400 === 0 || (this._year % 4 === 0 && this._year % 100 !== 0)) ? 29 : 28;
+            this._maxDay = this._isLeapYear() ? 29 : 28;
         } else {
             this._maxDay = 30;
         }
@@ -45,6 +45,14 @@ class Calendar {
         if (!this._day || this._day > this._maxDay) {
             this._day = this._util.generateRandomNumber(this._MIN_DAY, this._maxDay)
         }
+    }
+
+    /**
+     * Calculate leap year using the formula https://en.wikipedia.org/wiki/Gregorian_calendar
+     * @return {boolean}
+     */
+    _isLeapYear() {
+        return this._year % 400 === 0 || (this._year % 4 === 0 && this._year % 100 !== 0);
     }
 
     getMaxDay() {
