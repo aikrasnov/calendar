@@ -1,4 +1,4 @@
-const {Calendar} = require('../../calendar');
+const {Calendar} = require('../../../calendar');
 const {yearRange, monthRange, dayRange} = require('./lib/dates');
 
 describe('Main methods', () => {
