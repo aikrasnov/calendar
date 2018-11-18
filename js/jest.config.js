@@ -5,5 +5,5 @@ module.exports = {
     coverageDirectory: 'coverage',
     testEnvironment: 'node',
     collectCoverage: true,
-    verbose: true
+    verbose: true,
 };

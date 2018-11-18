@@ -9,6 +9,7 @@ module.exports = {
     "ecmaVersion": 2017
   },
   "rules": {
-    "indent": ["error", 4]
+    "indent": ["error", 4],
+    "comma-dangle": [2, 'always-multiline'],
   }
 };
