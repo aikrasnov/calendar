@@ -34,7 +34,7 @@ class Calendar {
         // max day depends on the year and month
         if (LONG_MONTHS.includes(this._month)) {
             this._maxDay = 31;
-        // if month is february, year maybe be leap year
+        // if the month is February, the number of days may be different
         } else if (this._month === 2) {
             this._maxDay = this._isLeapYear() ? 29 : 28;
         } else {
